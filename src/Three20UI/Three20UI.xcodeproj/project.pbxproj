@@ -2336,6 +2336,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
 			};
 			name = Internal;
 		};
@@ -2364,6 +2365,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
 			};
 			name = Debug;
 		};
@@ -2371,8 +2373,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EE7364B11849B3D00A35176 /* Library.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
