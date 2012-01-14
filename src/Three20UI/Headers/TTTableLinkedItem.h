@@ -23,6 +23,7 @@
   NSString* _URL;
   NSString* _accessoryURL;
 
+  // The selector signature on _delegate should be: -(void)myMethod:(id)rowItem;
   id        _delegate;
   SEL       _selector;
 }
