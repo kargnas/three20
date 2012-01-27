@@ -140,7 +140,7 @@ UIDeviceOrientation TTDeviceOrientation() {
     return UIDeviceOrientationPortrait;
 
   } else {
-    return o;
+    return orient;
   }
 }
 

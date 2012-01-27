@@ -224,7 +224,7 @@
  * @return The view controller mapped to URL.
  */
 - (UIViewController*)viewControllerForURL:(NSString*)URL query:(NSDictionary*)query
-                                  pattern:(TTURLNavigatorPattern**)pattern;
+                                  pattern:(TTURLPattern**)pattern;
 
 /**
  * Tells the navigator to delay heavy operations.
