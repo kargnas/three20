@@ -89,4 +89,9 @@
 
 - (void)showKeyboard;
 
+/**
+ * Show/hide activity ("loading...") view. To Hide, pass nil as activityText.
+ */
+- (void)showActivity:(NSString*)activityText;
+
 @end
