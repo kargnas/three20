@@ -269,6 +269,10 @@ static const NSUInteger kFirstTableSection = 0;
   if (_controller.menuView) {
     [_controller hideMenu:YES];
   }
+
+	SEL sel = @selector(touchesBegan:withEvent:);
+	if ([_controller respondsToSelector:sel])
+		[_controller performSelector:sel withObject:touches withObject:event];
 }
 
 
