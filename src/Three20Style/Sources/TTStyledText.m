@@ -102,7 +102,17 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 + (TTStyledText*)textFromXHTML:(NSString*)source {
-  return [self textFromXHTML:source lineBreaks:NO URLs:YES];
+  // don't parse URLs because the server is always sending us anchor
+  // tags around them when it encounters them. See ticket#IOS-618.
+	TTStyledText* result =  [self textFromXHTML:source lineBreaks:NO URLs:NO];
+
+  // since it failed, lets try again wrapping the string in a CDATA section
+	if (result == nil) {
+		source = [NSString stringWithFormat:@"<![CDATA[%@]]>", source];
+		result = [self textFromXHTML:source lineBreaks:NO URLs:NO];
+	}
+
+	return result;
 }
 
 
