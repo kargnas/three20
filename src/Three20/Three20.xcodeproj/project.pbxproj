@@ -739,7 +739,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				SDKROOT = iphoneos;
 			};
 			name = Internal;
 		};
@@ -801,7 +800,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -813,7 +811,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
